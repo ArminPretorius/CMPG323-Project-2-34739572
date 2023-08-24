@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 
 namespace EcoPowerLogisticsAPI.Models;
 
+[Authorize]
 public partial class Customer
 {
     public short CustomerId { get; set; }

@@ -1,3 +1,4 @@
+using EcoPowerLogisticsAPI.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,7 +15,6 @@ using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Linq;
-using EcoPowerLogisticsAPI.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 

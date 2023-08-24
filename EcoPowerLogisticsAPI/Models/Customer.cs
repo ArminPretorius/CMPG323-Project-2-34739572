@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace EcoPowerLogisticsAPI.Models;
 
-[Authorize]
 public partial class Customer
 {
     public short CustomerId { get; set; }

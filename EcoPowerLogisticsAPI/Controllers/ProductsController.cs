@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace EcoPowerLogisticsAPI.Controllers
 {
-    [AllowAnonymous]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]

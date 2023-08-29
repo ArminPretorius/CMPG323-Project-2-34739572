@@ -1,5 +1,4 @@
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\appsettings.json
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\EcoPowerLogisticsAPI.exe
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\EcoPowerLogisticsAPI.deps.json
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\EcoPowerLogisticsAPI.runtimeconfig.json
@@ -253,3 +252,4 @@ C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\bin\Debug\net6.0\appsettings.json

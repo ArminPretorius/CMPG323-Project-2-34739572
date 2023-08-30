@@ -82,6 +82,36 @@ namespace EcoPowerLogisticsAPI.Controllers
             return NoContent();
         }
 
+        // PATCH: api/OrderDetails/5
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> PatchOrderDetail(short id, OrderDetail orderDetail)
+        {
+            if (id != orderDetail.OrderDetailsId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(orderDetail).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!OrderDetailExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
         // POST: api/OrderDetails
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]

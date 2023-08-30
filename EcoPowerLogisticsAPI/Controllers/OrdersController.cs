@@ -51,6 +51,29 @@ namespace EcoPowerLogisticsAPI.Controllers
             return order;
         }
 
+        // GET: api/Customers/{customerId}/Orders
+        [HttpGet("{customerId}/Orders")]
+        public async Task<ActionResult<IEnumerable<Order>>> GetOrdersForCustomer(short customerId)
+        {
+            if (_context.Customers == null)
+            {
+                return NotFound();
+            }
+
+            var customer = await _context.Customers.FindAsync(customerId);
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
+
+            var ordersForCustomer = await _context.Orders
+                .Where(order => order.CustomerId == customerId)
+                .ToListAsync();
+
+            return ordersForCustomer;
+        }
+
         // PUT: api/Orders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

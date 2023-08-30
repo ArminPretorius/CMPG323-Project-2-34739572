@@ -51,6 +51,34 @@ namespace EcoPowerLogisticsAPI.Controllers
             return orderDetail;
         }
 
+        // GET: api/OrderDetails/{orderId}/GetProducts
+        [HttpGet("{orderId}/GetProducts")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductsForOrder(short orderId)
+        {
+            if (_context.Orders == null || _context.OrderDetails == null || _context.Products == null)
+            {
+                return NotFound();
+            }
+
+            var orderExists = await _context.Orders.AnyAsync(order => order.OrderId == orderId);
+            if (!orderExists)
+            {
+                return NotFound("Order not found.");
+            }
+
+            var productsForOrder = await _context.Products
+                .Join(
+                    _context.OrderDetails,
+                    product => product.ProductId,
+                    orderDetail => orderDetail.ProductId,
+                    (product, orderDetail) => new { Product = product, OrderDetail = orderDetail })
+                .Where(joinResult => joinResult.OrderDetail.OrderId == orderId)
+                .Select(joinResult => joinResult.Product)
+                .ToListAsync();
+
+            return productsForOrder;
+        }
+
         // PUT: api/OrderDetails/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]

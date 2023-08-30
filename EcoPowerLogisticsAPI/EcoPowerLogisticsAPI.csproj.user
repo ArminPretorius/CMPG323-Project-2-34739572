@@ -10,5 +10,6 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>EcoPowerLogisticsAPI.Models.EcoPowerLogisticsDbContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\armin\Documents\GitHub\CMPG323-Project-2-34739572\EcoPowerLogisticsAPI\Properties\PublishProfiles\EcoPowerLogisticsAPI20230830170145 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

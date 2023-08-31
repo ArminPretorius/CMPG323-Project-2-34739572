@@ -1,5 +1,8 @@
 # CMPG323-Project-2-34739572
 ## How to use the API
+#### URL:
+> https://ecopowerlogisticsapi20230830170145.azurewebsites.net/index.html
+-------------------------------------------------------------------------------------------------------------
 #### POST:/api/Authenticate/login
 > This is where you can log in with a registered account in order to recieve your token to use the API.
 #### POST:/api/Authenticate/register
